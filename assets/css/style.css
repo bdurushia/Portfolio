@@ -1,6 +1,117 @@
+/* Font Families
+font-family: 'Work Sans', sans-serif;
+
+*/
+
+/* Global CSS Variables - Colors */
+:root {
+    --primary-color: #276678;
+    --secondary-color: #1687A7;
+    --tertiary-color: #b6c9d8;
+    --quaternary-color: #d3e0ea;
+}
+
 /* Remove Default Browser Enforced Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    color: var(--secondary-color);
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* Header Section */
+
+header {
+    top: 0;
+    padding: 20px 45px;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: auto;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--quaternary-color)
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 40px;
+    font-size: 1rem;
+}
+
+/* Header Section End */
+
+section {
+    padding: 45px;
+}
+
+/* Hero Section */
+
+.hero {
+    background-image: url("../images/hero-mountains-banff.jpg");
+    background-size: cover;
+    background-position: 80%;
+    background-position-y: 500px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: lighter;
+}
+
+.hero div {
+
+}
+
+.hero a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+
+
+
+
+
+
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 1000px) {
+    .hero {
+        background-image: url("../images/hero-mountains-banff.jpg");
+        background-size: cover;
+        background-position: 80%;
+        height: 300px;
+    } 
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+
 }
