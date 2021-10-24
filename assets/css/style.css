@@ -90,7 +90,7 @@ header nav ul li a {
 
 /* About Me, Prjects, Contact Sections */
 
-.projects, .about-me, .contact {
+#projects, #about-me, #contact {
     display: flex;
     flex-wrap: wrap;
 }
@@ -113,7 +113,7 @@ header nav ul li a {
     font-size: 1.8rem;
 }
 
-.about-me p {
+#about-me p {
     line-height: 1.5;
     padding: 0 10px;
 }
@@ -146,6 +146,9 @@ header nav ul li a {
     margin: 10px;
     flex-direction: column;
 }
+
+/* Contact Section */
+
 
 
 /* Footer Section */
