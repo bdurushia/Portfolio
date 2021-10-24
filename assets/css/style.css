@@ -45,6 +45,10 @@ header a {
     color: var(--quaternary-color)
 }
 
+header a:hover {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 1)
+}
+
 header nav ul, .contact-content ul {
     display: flex;
     flex-wrap: wrap;
@@ -127,14 +131,32 @@ header nav ul li a, .contact-content ul li {
     color: var(--primary-color);
 }
 
-.top-card {
+.run-buddy {
     display: flex;
     flex-wrap: wrap;
-    background-color: #cadceb;
+    /* background-color: #cadceb; */
+    background-image: url("../images/run-buddy-screenshot.jpg");
+    background-size: cover;
     flex: 1 100%;
-    padding: 50px 20px;
+    padding: 100px 25px;
+    padding-left: 0;
+    padding-bottom: 0;
     margin: 10px;
     flex-direction: column;
+    align-items: flex-start;
+}
+
+/* .run-buddy:hover {
+    background-image: url("../images/run-buddy-screenshot.jpg");
+    background-size: cover;
+    opacity: 0.5;
+} */
+
+.rb-content {
+    opacity: 1;
+    color: var(--quaternary-color);
+    background-color: var(--secondary-color);
+    padding: 10px;
 }
 
 .bottom-card {
@@ -156,6 +178,10 @@ header nav ul li a, .contact-content ul li {
 .contact-content a {
     text-decoration: none;
     color: var(--primary-color);
+}
+
+.contact-content a:hover {
+    color: var(--quaternary-color)
 }
 
 /* Footer Section */
