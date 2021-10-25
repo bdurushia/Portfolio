@@ -176,29 +176,29 @@ header nav ul li a, .contact-content ul li {
     color: var(--quaternary-color);
     background-color: var(--secondary-color);
     padding: 10px;
+    filter: opacity(0.5);
+    -webkit-filter: opacity(0.5);
     transition: 0.25s;
 }
 
 .text-content:hover {
-    filter: opacity(0.5);
+    filter: opacity(1);
+    -webkit-filter: opacity(1);
 }
 
-.password-gen, .blind-auct {
+/* .password-gen, .blind-auct {
     display: flex;
     flex-wrap: wrap;
-    /* background-color: #cadceb; */
-    flex: 1 40%;
+    flex-basis: 50%;
     padding: 20px 10px;
     margin: 10px;
-    flex-direction: column;
-}
+} */
 
 .password-gen, .blind-auct {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    background: 0.5;
-    flex: 1 50%;
+    flex: 1;
     padding: 50px 25px;
     padding-left: 0;
     padding-bottom: 0;
