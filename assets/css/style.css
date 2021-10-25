@@ -122,7 +122,7 @@ header nav ul li a, .contact-content ul li {
     padding: 0 10px;
 }
 
-.section-content, .contact-content {
+.section-content {
     flex: 1 80%;
     display: flex;
     flex-wrap: wrap;
@@ -132,44 +132,129 @@ header nav ul li a, .contact-content ul li {
 }
 
 .run-buddy {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
-    /* background-color: #cadceb; */
-    background-image: url("../images/run-buddy-screenshot.jpg");
-    background-size: cover;
+    background: 0.5;
     flex: 1 100%;
-    padding: 100px 25px;
+    padding: 200px 25px;
     padding-left: 0;
     padding-bottom: 0;
     margin: 10px;
     flex-direction: column;
     align-items: flex-start;
+    border: 3px solid var(--secondary-color);
 }
 
-/* .run-buddy:hover {
+.run-buddy:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     background-image: url("../images/run-buddy-screenshot.jpg");
     background-size: cover;
-    opacity: 0.5;
-} */
+    opacity: 0.4;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    overflow: hidden;
+    transition: 0.25s;
+}
 
-.rb-content {
-    opacity: 1;
+.run-buddy:hover:before {
+    filter: blur(0.5px);
+    -webkit-filter: blur(0.5px);
+}
+
+.text-content {
+    position: relative;
     color: var(--quaternary-color);
     background-color: var(--secondary-color);
     padding: 10px;
+    transition: 0.25s;
 }
 
-.bottom-card {
+.text-content:hover {
+    filter: opacity(0.5);
+}
+
+.password-gen, .blind-auct {
     display: flex;
     flex-wrap: wrap;
-    background-color: #cadceb;
+    /* background-color: #cadceb; */
     flex: 1 40%;
     padding: 20px 10px;
     margin: 10px;
     flex-direction: column;
 }
 
+.password-gen, .blind-auct {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    background: 0.5;
+    flex: 1 50%;
+    padding: 50px 25px;
+    padding-left: 0;
+    padding-bottom: 0;
+    margin: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 3px solid var(--secondary-color);
+}
+
+.password-gen:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("../images/password-js-image.png");
+    background-size: cover;
+    opacity: 0.4;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    overflow: hidden;
+    transition: 0.25s;
+}
+
+.password-gen:hover:before {
+    filter: blur(0.5px);
+    -webkit-filter: blur(0.5px);
+}
+
+.blind-auct:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("../images/blind-auct-image.jpg");
+    background-size: cover;
+    opacity: 0.4;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    overflow: hidden;
+    transition: 0.25s;
+}
+
+.blind-auct:hover:before {
+    filter: blur(0.5px);
+    -webkit-filter: blur(0.5px);
+}
+
 /* Contact Section */
+
+.contact-content {
+    flex: 1 80%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+}
 
 .contact-content ul li {
     color: var(--secondary-color)
