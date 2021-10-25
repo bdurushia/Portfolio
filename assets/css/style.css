@@ -36,7 +36,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    overflow: auto;
+    overflow: hidden;
     position: sticky;
 }
 
@@ -167,6 +167,10 @@ header nav ul li a, .contact-content ul li {
     -webkit-filter: blur(0.5px);
 }
 
+.section-content a {
+    text-decoration: none;
+}
+
 .text-content {
     position: relative;
     color: var(--quaternary-color);
@@ -254,10 +258,12 @@ header nav ul li a, .contact-content ul li {
     flex-wrap: wrap;
     background-color: var(--tertiary-color);
     color: var(--primary-color);
+    justify-content: center;
 }
 
 .contact-content ul li {
-    color: var(--secondary-color)
+    color: var(--secondary-color);
+    padding: 5px 40px;
 }
 
 .contact-content a {
