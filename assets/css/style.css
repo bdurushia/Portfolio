@@ -42,11 +42,15 @@ header {
 
 header a {
     text-decoration: none;
-    color: var(--quaternary-color)
+    color: var(--quaternary-color);
+    transition: 0.25s;
 }
 
 header a:hover {
-    text-shadow: 0 0 20px rgba(255, 255, 255, 1)
+    background: var(--tertiary-color);
+    color: var(--secondary-color);
+    border-radius: 15px;
+    text-shadow: none;
 }
 
 header nav ul, .contact-content ul {
@@ -185,14 +189,6 @@ header nav ul li a, .contact-content ul li {
     filter: opacity(1);
     -webkit-filter: opacity(1);
 }
-
-/* .password-gen, .blind-auct {
-    display: flex;
-    flex-wrap: wrap;
-    flex-basis: 50%;
-    padding: 20px 10px;
-    margin: 10px;
-} */
 
 .password-gen, .blind-auct {
     position: relative;
