@@ -122,7 +122,7 @@ header nav ul li a, .contact-content ul li {
 
 #about-me p {
     line-height: 1.5;
-    padding: 0 10px;
+    padding: 0 10px 10px 0;
 }
 
 .section-content {
@@ -323,7 +323,7 @@ footer div {
     .section-title {
         justify-content: center;
         background-color: var(--tertiary-color);
-        border-bottom: 1px solid var(--primary-color);
+        padding: 25px;
     }
     
     .section-content {
@@ -337,6 +337,19 @@ footer div {
     .section-title h2 {
         color: var(--primary-color);
         font-weight: normal;
+        border-bottom: 1px solid var(--primary-color);
+        padding: 0 45px 25px 45px;
+    }
+
+    .contact-content {
+        flex-basis: 100%;
+        font-size: 1rem;
+        padding: 20px 0;
+    }
+
+    footer {
+        font-size: 0.8rem;
+        justify-content: center;
     }
 
 }
