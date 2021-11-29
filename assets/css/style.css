@@ -192,7 +192,7 @@ header nav ul li a, .contact-content ul li {
     -webkit-filter: opacity(1);
 }
 
-.password-gen, .blind-auct {
+.password-gen, .food-mood {
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -229,14 +229,14 @@ header nav ul li a, .contact-content ul li {
     opacity: 0.7;
 }
 
-.blind-auct:before {
+.food-mood:before {
     position: absolute;
     content: '';
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: url("../images/blind-auct-image.jpg");
+    background-image: url("../images/food-mood.jpg");
     background-size: cover;
     opacity: 0.4;
     filter: blur(2px);
@@ -245,7 +245,7 @@ header nav ul li a, .contact-content ul li {
     transition: 0.25s;
 }
 
-.blind-auct:hover:before {
+.food-mood:hover:before {
     filter: blur(0.5px);
     -webkit-filter: blur(0.5px);
     opacity: 0.7;
@@ -305,7 +305,7 @@ footer div {
         height: 300px;
     }
 
-    .run-buddy:before, .password-gen:before, .blind-auct:before {
+    .run-buddy:before, .password-gen:before, .food-mood:before {
         opacity: 0.7;
     }
 
@@ -359,7 +359,7 @@ footer div {
         justify-content: center;
     }
 
-    .password-gen, .blind-auct {
+    .password-gen, .food-mood {
         flex-basis: 100%;
     }
 
