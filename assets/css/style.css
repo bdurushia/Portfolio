@@ -138,7 +138,7 @@ header nav ul li a, .contact-content ul li {
     text-decoration: none;
 }
 
-.run-buddy {
+.beyond-the-peak {
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -154,15 +154,16 @@ header nav ul li a, .contact-content ul li {
     overflow: hidden;
 }
 
-.run-buddy:before {
+.beyond-the-peak:before {
     position: absolute;
     content: '';
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: url("../images/run-buddy-screenshot.jpg");
+    background-image: url("../images/beyond-the-peak-screenshot.jpg");
     background-size: cover;
+    background-position: center;
     opacity: 0.4;
     filter: blur(2px);
     -webkit-filter: blur(2px);
@@ -170,7 +171,7 @@ header nav ul li a, .contact-content ul li {
     transition: 0.25s;
 }
 
-.run-buddy:hover:before {
+.beyond-the-peak:hover:before {
     filter: blur(0.5px);
     -webkit-filter: blur(0.5px);
     opacity: 0.7;
@@ -305,7 +306,7 @@ footer div {
         height: 300px;
     }
 
-    .run-buddy:before, .password-gen:before, .food-mood:before {
+    .beyond-the-peak:before, .password-gen:before, .food-mood:before {
         opacity: 0.7;
     }
 
